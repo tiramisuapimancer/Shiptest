@@ -1,3 +1,4 @@
+// Hey! Listen! Update \config\rockruinblacklist.txt with your new ruins!
 
 /datum/map_template/ruin/rockplanet
 	prefix = "_maps/RandomRuins/RockRuins/"
@@ -138,3 +139,15 @@
 	suffix = "rockplanet_pandora.dmm"
 	name = "Pandora Arena"
 	description = "Some... thing has settled here."
+
+/datum/map_template/ruin/rockplanet/crash_kitchen
+	name = "Crashed Kitchen"
+	description = "A crashed part of some unlucky ship."
+	id = "crash_kitchen"
+	suffix = "rockplanet_crash_kitchen.dmm"
+
+/datum/map_template/ruin/rockplanet/crash_cult
+	name = "Crashed Cult Ship"
+	description = "A crashed part of some unlucky ship. Has been occupied by a cult."
+	id = "crash_cult"
+	suffix = "rockplanet_crash_cult.dmm"

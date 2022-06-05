@@ -2,7 +2,7 @@
 
 /area/ruin/space
 	has_gravity = FALSE
-	area_flags = UNIQUE_AREA
+	area_flags = NONE
 
 /area/ruin/space/has_grav
 	has_gravity = STANDARD_GRAVITY
@@ -349,7 +349,7 @@
 /area/ruin/space/has_grav/hellfactoryoffice
 	name = "Hell Factory Office"
 	icon_state = "red"
-	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | NOTELEPORT
+	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | NOTELEPORT
 
 //Ruin of Transport 18
 /area/ruin/space/has_grav/transport18fore
@@ -363,3 +363,217 @@
 /area/ruin/space/transport18aft
 	name = "Booze Cruise Aft"
 	icon_state = "engine"
+
+//Ruin of the rad ship. It's pretty rad.
+
+/area/ruin/space/has_grav/radship/Cargo1
+	name = "Cargo Bay 1"
+	icon_state = "cargo_bay"
+
+/area/ruin/space/has_grav/radship/Cargo2
+	name = "Cargo Bay 2"
+	icon_state = "cargo_bay"
+
+/area/ruin/space/has_grav/radship/Cargo3
+	name = "Cargo Bay 3"
+	icon_state = "cargo_bay"
+
+/area/ruin/space/has_grav/radship/Cargo4
+	name = "Cargo Bay 4"
+	icon_state = "cargo_bay"
+
+/area/ruin/space/has_grav/radship/EngineRoom
+	name = "Engine Room"
+	icon_state = "yellow"
+
+/area/ruin/space/has_grav/radship/Engineering
+	name = "Engineering"
+	icon_state = "engine"
+
+/area/ruin/space/has_grav/radship/MethLab
+	name = "Storage"
+	icon_state = "red"
+
+/area/ruin/space/has_grav/radship/CrewQuarters
+	name = "Crew Quarters"
+	icon_state = "green"
+
+/area/ruin/space/has_grav/radship/Hallway
+	name = "Hallway"
+	icon_state = "away"
+
+//MACSPACE
+/area/ruin/space/has_grav/powered/macspace
+	name = "Mac Space Restaurant"
+	icon_state = "yellow"
+
+//POWER PUZLE
+
+/area/ruin/space/has_grav/storage/central
+	name = "storage central"
+	icon_state = "hallC"
+
+/area/ruin/space/has_grav/storage/central2
+	name = "storage Vault"
+	icon_state = "red"
+
+/area/ruin/space/has_grav/storage/materials1
+	name = "storage materials fore room"
+	icon_state = "storage_wing"
+
+/area/ruin/space/has_grav/storage/materials2
+	name = "storage Materials secure room"
+	icon_state = "storage"
+
+/area/ruin/space/has_grav/storage/materials3
+	name = "storage materials miscellaneous"
+	icon_state = "yellow"
+
+/area/ruin/space/has_grav/storage/power1
+	name = "storage Enginering central"
+	icon_state = "yellow"
+
+/area/ruin/space/has_grav/storage/power2
+	name = "storage Enginering "
+	icon_state = "engi_storage"
+
+/area/ruin/space/has_grav/storage/power3
+	name = "storage Crates"
+	icon_state = "green"
+
+//Space Gym
+
+/area/ruin/space/has_grav/spacegym
+	name = "Space Gym"
+	icon_state = "firingrange"
+
+//scav_mining
+/area/ruin/space/has_grav/scav_mining/entrance
+	name = "Asteroid mine entrance"
+	icon_state = "red"
+
+/area/ruin/space/has_grav/scav_mining/core
+	name = "Asteroid mine core"
+	icon_state = "yellow"
+
+/area/ruin/space/has_grav/scav_mining/dorm
+	name = "Asteroid mine dorm"
+	icon_state = "blue"
+
+//astraeus
+
+/area/ruin/space/has_grav/astraeus/hallway
+	name = "Hallway"
+	icon_state = "hallC"
+
+/area/ruin/space/has_grav/astraeus/munitions
+	name = "Munitions Bay"
+	icon_state = "engine"
+
+/area/ruin/space/has_grav/astraeus/dorms_med
+	name = "Conference Room"
+	icon_state = "Sleep"
+
+/area/ruin/space/has_grav/astraeus/bridge
+	name = "Bridge"
+	icon_state = "bridge"
+
+/area/ruin/space/has_grav/astraeus/disposals
+	name = "Disposals"
+	icon_state = "yellow"
+
+/area/ruin/space/has_grav/astraeus/custodial
+	name = "Custodial Closet"
+	icon_state = "green"
+
+/area/ruin/space/has_grav/glade
+	name = "\improper Dark Glade"
+	icon_state = "away"
+	always_unpowered = FALSE
+
+//Syndie battle sphere
+/area/ruin/space/has_grav/syndicircle/halls
+	name = "Syndicate Battle Sphere Primary Hallway"
+	icon_state = "dk_yellow"
+	color = "#a5131388"
+
+/area/ruin/space/has_grav/syndicircle/spacewalk
+	name = "Syndicate Battle Sphere Shuttle Launch Site"
+	icon_state = "dk_yellow"
+	color = "#663cb488"
+
+/area/ruin/space/has_grav/syndicircle/research
+	name = "Syndicate Battle Sphere Laboratory"
+	icon_state = "dk_yellow"
+	color = "#228a2b88"
+
+/area/ruin/space/has_grav/syndicircle/escape
+	name = "Syndicate Battle Sphere Escape Shuttle"
+	icon_state = "dk_yellow"
+	color = "#92bb3388"
+
+/area/ruin/space/has_grav/syndicircle/winter
+	name = "Syndicate Battle Sphere Snow Outpost"
+	icon_state = "dk_yellow"
+	color = "#4341c488"
+
+/area/ruin/space/has_grav/syndicircle/training
+	name = "Syndicate Battle Sphere Training Grounds"
+	icon_state = "dk_yellow"
+	color = "#26773a88"
+
+//Syndiecate chemlab
+/area/ruin/space/has_grav/crazylab/airlock
+	name = "Syndicate Laboratory 4071 Airlock"
+	icon_state = "dk_yellow"
+	color = "#eb7fac88"
+
+/area/ruin/space/has_grav/crazylab/armory
+	name = "Syndicate Laboratory 4071 Armory"
+	icon_state = "dk_yellow"
+	color = "#55384c88"
+
+/area/ruin/space/has_grav/crazylab/hydro
+	name = "Syndicate Laboratory 4071 Hydroponics Lab"
+	icon_state = "dk_yellow"
+	color = "#185d7288"
+
+/area/ruin/space/has_grav/crazylab/bar
+	name = "Syndicate Laboratory 4071 Kitchen"
+	icon_state = "dk_yellow"
+	color = "#75162e88"
+
+/area/ruin/space/has_grav/crazylab/gamble
+	name = "Syndicate Laboratory 4071 Break Room"
+	icon_state = "dk_yellow"
+	color = "#97632088"
+
+/area/ruin/space/has_grav/crazylab/crew
+	name = "Syndicate Laboratory 4071 Crew Quarters"
+	icon_state = "dk_yellow"
+	color = "#74c24f88"
+
+/area/ruin/space/has_grav/crazylab/engi
+	name = "Syndicate Laboratory 4071 Engineering"
+	icon_state = "dk_yellow"
+	color = "#0e1b3f88"
+
+/area/ruin/space/has_grav/crazylab/chem
+	name = "Syndicate Laboratory 4071 Chemistry Lab"
+	icon_state = "dk_yellow"
+	color = "#77265588"
+
+/area/ruin/space/has_grav/crazylab/bomb
+	name = "Syndicate Laboratory 4071 Bombing Range"
+	icon_state = "dk_yellow"
+	color = "#2b267788"
+
+/area/ruin/space/has_grav/crazylab/watchpost
+	name = "Syndicate Laboratory 4071 WatchPost"
+	icon_state = "dk_yellow"
+	color = "#77262688"
+
+/area/ruin/space/has_grav/crazylab/outside
+	name = "Syndicate Laboratory 4071 Surrounding Area"
+	icon_state = "dk_yellow"
+	color = "#26773a88"
