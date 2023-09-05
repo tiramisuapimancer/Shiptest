@@ -1,10 +1,10 @@
 /datum/map_template/shuttle
 	name = "Base Shuttle Template"
-	var/category
+	var/category = "Basic"
 	var/file_name
 
 	var/description
-	var/admin_notes
+	var/list/tags
 
 	var/list/movement_force // If set, overrides default movement_force on shuttle
 
@@ -194,6 +194,7 @@
 	.["templateName"] = name
 	.["templateShortName"] = short_name
 	.["templateDescription"] = description
+	.["templateTags"] = tags
 	.["templateCategory"] = category
 	.["templateLimit"] = limit
 	.["templateEnabled"] = enabled
@@ -225,6 +226,18 @@
 			return TRUE
 		if("setTemplateDescription")
 			description = params["new_template_description"]
+			update_static_data(usr, ui)
+			return TRUE
+		if("addTemplateTags")
+			if(!tags)
+				tags = list()
+			if(!(params["new_template_tags"] in tags))
+				tags.Add(params["new_template_tags"])
+			update_static_data(usr, ui)
+			return TRUE
+		if("removeTemplateTags")
+			if(params["new_template_tags"] in tags)
+				tags.Remove(params["new_template_tags"])
 			update_static_data(usr, ui)
 			return TRUE
 		if("setTemplateCategory")
@@ -302,10 +315,6 @@
 /datum/map_template/shuttle/hunter
 	category = "misc"
 
-/datum/map_template/shuttle/hunter/space_cop
-	file_name = "hunter_space_cop"
-	name = "Police Spacevan"
-
 /datum/map_template/shuttle/hunter/russian
 	file_name = "hunter_russian"
 	name = "Russian Cargo Ship"
@@ -345,11 +354,36 @@
 	name_categories = list("WEAPONS")
 	short_name = "Dartbird"
 
-
 //Subshuttles
 
 /datum/map_template/shuttle/subshuttles
 	category = "subshuttles"
 
+/datum/map_template/shuttle/subshuttles/pill
+	file_name = "independent_pill"
+	name = "Pill-Class Torture Device"
+	prefix = "Pill"
+	name_categories = list("PILLS")
+
+/datum/map_template/shuttle/subshuttles/pillb
+	file_name = "independent_blackpill"
+	name = "Blackpill-Class Manned Torpedo"
+	prefix = "Pill"
+	name_categories = list("PILLS")
+
+/datum/map_template/shuttle/subshuttles/pills
+	file_name = "independent_superpill"
+	name = "Superpill-Class Experimental Engineering Platform"
+	prefix = "Pill"
+	name_categories = list("PILLS")
 //your subshuttle here
 
+/datum/map_template/shuttle/subshuttles/kunai
+	file_name = "independent_kunai"
+	name = "Kunai Dropship"
+	prefix = "SV"
+
+/datum/map_template/shuttle/subshuttles/sugarcube
+	file_name = "independent_sugarcube"
+	name = "Sugarcube Transport"
+	prefix = "ISV"
