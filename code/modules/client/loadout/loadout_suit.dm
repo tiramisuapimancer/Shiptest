@@ -81,6 +81,10 @@
 	display_name = "hoodie, T4L1"
 	path = /obj/item/clothing/suit/hooded/hoodie/rilena
 
+/datum/gear/suit/jacket/hoodie_baw
+	display_name = "hoodie, black w grey hood"
+	path = /obj/item/clothing/suit/hooded/hoodie/blackwa
+
 /datum/gear/suit/jacket/highvis
 	display_name = "industrial jacket"
 	path = /obj/item/clothing/suit/toggle/industrial
@@ -111,3 +115,7 @@
 	display_name = "worn shirt"
 	path = /obj/item/clothing/suit/ianshirt
 
+/datum/gear/suit/hawaiian
+	display_name = "floral shirt"
+	description = "From grills to guns, this shirt's seen it all."
+	path = /obj/item/clothing/suit/hawaiian
