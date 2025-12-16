@@ -109,7 +109,7 @@
 /turf/open/floor/bronze,
 /area/ruin/reebe)
 "Em" = (
-/obj/item/gun/ballistic/automatic/pistol/commander/no_mag,
+/obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /turf/open/floor/bronze,
 /area/ruin/reebe)
 "Ep" = (
@@ -229,7 +229,7 @@
 /turf/open/floor/bronze,
 /area/ruin/reebe)
 "XX" = (
-/obj/effect/mob_spawn/human/corpse/nanotrasensoldier,
+/obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /turf/open/floor/bronze,
 /area/ruin/reebe)
 "Zx" = (

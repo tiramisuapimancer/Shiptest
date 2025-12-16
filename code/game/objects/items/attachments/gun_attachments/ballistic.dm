@@ -1,3 +1,4 @@
+/*
 /obj/item/attachment/gun/ballistic
 	name = "ballistic underbarrel gun"
 	desc = "A ballistic underbarrel gun. It shoots bullets. Or something."
@@ -28,6 +29,7 @@
 	return examine_list
 
 /obj/item/gun/ballistic/shotgun/underbarrel
+	bad_type = /obj/item/gun/ballistic/shotgun/underbarrel
 	name = "underbarrel ballistic gun"
 	desc = "You shouldnt be seeing this."
 	semi_auto = FALSE
@@ -37,6 +39,7 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/internal/shot/underbarrel,
 	)
+	wear_rate = 0
 
 /obj/item/attachment/gun/ballistic/shotgun
 	name = "underbarrel shotgun"
@@ -52,6 +55,7 @@
 	weapon_type = /obj/item/gun/ballistic/shotgun/underbarrel/grenadelauncher
 
 /obj/item/gun/ballistic/shotgun/underbarrel/grenadelauncher
+	bad_type = /obj/item/gun/ballistic/shotgun/underbarrel/grenadelauncher
 	name = "underbarrel grenade launcher"
 	fire_sound = 'sound/weapons/gun/general/grenade_launch.ogg'
 	always_chambers = TRUE
@@ -74,6 +78,7 @@
 	allowed_ammo_types = list(
 		/obj/item/ammo_box/magazine/m22lr_himehabu/hognose,
 	)
+	wear_rate = 0
 
 /obj/item/ammo_box/magazine/m22lr_himehabu/hognose
 	name = "Hognose magazine (.22 LR)"
@@ -82,5 +87,4 @@
 /obj/item/ammo_box/magazine/m22lr_himehabu/hognose/empty
 	start_empty = TRUE
 
-
-
+*/

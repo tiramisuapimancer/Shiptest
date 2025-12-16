@@ -12,6 +12,22 @@
 	undyeable = TRUE
 	clothamnt = 1
 
+/obj/item/clothing/gloves/armwarmer
+	name = "arm warmers"
+	desc = "Fingerless arm warmers that reach past your elbows."
+	icon_state = "armwarmer"
+	transfer_prints = TRUE
+	strip_delay = 40
+	equip_delay_other = 20
+	cold_protection = HANDS|ARMS
+	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
+	custom_price = 75
+	undyeable = TRUE
+
+/obj/item/clothing/gloves/armwarmer/striped
+	name = "striped arm warmers"
+	icon_state = "stripedwarmer"
+
 /obj/item/clothing/gloves/botanic_leather
 	name = "botanist's leather gloves"
 	desc = "These leather gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin.  They're also quite warm."
@@ -41,9 +57,14 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 50)
 	//supports_variations = KEPORI_VARIATION
 
+/obj/item/clothing/gloves/combat/insul
+	name = "insulated combat gloves"
+	desc = "Durable insulated combat gloves providing both protection from electrical shocks and industrial hazards like fire and acid."
+	siemens_coefficient = 0
+
 /obj/item/clothing/gloves/bracer
 	name = "bone bracers"
-	desc = "For when you're expecting to get slapped on the wrist. Offers modest protection to your arms."
+	desc = "Looks like they'd provide some measure of arm protection, but they're too flimsy to offer anything beside their \"stylish\" looks."
 	icon_state = "bracers"
 	transfer_prints = TRUE
 	strip_delay = 40
@@ -53,7 +74,6 @@
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
 	resistance_flags = NONE
-	armor = list("melee" = 15, "bullet" = 25, "laser" = 15, "energy" = 15, "bomb" = 20, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/gloves/rapid
 	name = "Gloves of the North Star"
@@ -126,10 +146,6 @@
 /obj/item/clothing/gloves/color/plasmaman/prototype
 	name = "prototype envirogloves"
 	icon_state = "protoplasma"
-
-/obj/item/clothing/gloves/color/plasmaman/clown
-	name = "clown envirogloves"
-	icon_state = "clownplasma"
 
 /obj/item/clothing/gloves/combat/wizard
 	name = "enchanted gloves"

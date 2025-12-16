@@ -24,7 +24,7 @@ Ask ninjanomnom if they're around
 
 #define RAD_MOB_SAFE 500 // How much stored radiation in a mob with no ill effects
 
-#define RAD_MOB_HAIRLOSS 800 // How much stored radiation to check for hair loss
+#define RAD_MOB_SICKNESS 800 // How much stored radiation to check for hair loss
 
 #define RAD_MOB_MUTATE 1250 // How much stored radiation to check for mutation
 
@@ -68,4 +68,5 @@ Ask ninjanomnom if they're around
 
 #define RAD_MEASURE_SMOOTHING 5
 
-#define RAD_GRACE_PERIOD 2
+#define RAD_GEIGER_RC 4 // RC-constant for the LP filter for geiger counters. See #define LPFILTER for more info.
+#define RAD_GEIGER_GRACE_PERIOD 4 // How many seconds after we last detect a radiation pulse until we stop blipping

@@ -8,21 +8,35 @@
 /datum/gear/accessory/scarf
 	subtype_path = /datum/gear/accessory/scarf
 
-/datum/gear/accessory/scarf/red
-	display_name = "scarf, red"
-	path = /obj/item/clothing/neck/scarf/red
-
-/datum/gear/accessory/scarf/green
-	display_name = "scarf, green"
-	path = /obj/item/clothing/neck/scarf/green
-
-/datum/gear/accessory/scarf/blue
-	display_name = "scarf, blue"
-	path = /obj/item/clothing/neck/scarf/darkblue
+/datum/gear/accessory/scarf/recolorable
+	display_name = "scarf, recolorable"
+	path = /obj/item/clothing/neck/scarf
 
 /datum/gear/accessory/shemagh
 	display_name = "shemagh"
 	path = /obj/item/clothing/neck/shemagh
+
+/datum/gear/accessory/shemagh_black
+	display_name = "shemagh, black"
+	path = /obj/item/clothing/neck/shemagh/black
+
+/datum/gear/accessory/shemagh_brown
+	display_name = "shemagh, brown"
+	path = /obj/item/clothing/neck/shemagh/brown
+
+/datum/gear/accessory/shemagh_olive
+	display_name = "shemagh, olive"
+	path = /obj/item/clothing/neck/shemagh/olive
+
+/datum/gear/accessory/shemagh_khaki
+	display_name = "shemagh, khaki"
+	path = /obj/item/clothing/neck/shemagh/khaki
+
+//poncho
+
+/datum/gear/accessory/poncho
+	display_name = "poncho, recolorable"
+	path = /obj/item/clothing/neck/poncho
 
 //(The actually good scarves)
 
@@ -60,6 +74,14 @@
 	display_name = "gloves, black"
 	description = "Standard hand coverings for everyday use."
 	path = /obj/item/clothing/gloves/color/black
+
+/datum/gear/accessory/gloves/armwarmers
+	display_name = "arm warmers"
+	path = /obj/item/clothing/gloves/armwarmer
+
+/datum/gear/accessory/gloves/stripedwarmers
+	display_name = "striped arm warmers"
+	path = /obj/item/clothing/gloves/armwarmer/striped
 
 /datum/gear/accessory/gloves/white
 	display_name = "gloves, white"
@@ -125,11 +147,28 @@
 	display_name = "balaclava"
 	path = /obj/item/clothing/mask/balaclava
 
+/datum/gear/accessory/mask/facemask
+	display_name = "face mask"
+	path = /obj/item/clothing/mask/breath/facemask
+
+/datum/gear/accessory/mask/halfmask
+	display_name = "half mask"
+	path = /obj/item/clothing/mask/gas/sechailer
+
 //Misc
 
 /datum/gear/accessory/waistcoat
 	display_name = "waistcoat"
 	path = /obj/item/clothing/accessory/waistcoat
+	slot = null
+/datum/gear/accessory/waistcoatbrown
+	display_name = "brown waistcoat"
+	path = /obj/item/clothing/accessory/waistcoat/brown
+	slot = null
+
+/datum/gear/accessory/waistcoatwhite
+	display_name = "white waistcoat"
+	path = /obj/item/clothing/accessory/waistcoat/white
 	slot = null
 
 /datum/gear/accessory/stethoscope
